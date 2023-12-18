@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-95u037nnc$qt&pa)e8**(+3ecx-sc81u0uepv4pv1su)w7nn7r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://carstat.azurewebsites.net']
 
 
 # Application definition
