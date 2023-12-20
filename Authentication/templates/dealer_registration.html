@@ -12,7 +12,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-            <h1> Dealer Login</h1>
+            <h1> Dealer Registration</h1>
             <h2>We are team of talented designers making websites with Bootstrap</h2>
             <div class="d-flex justify-content-center justify-content-lg-start"></div>
           </div>
@@ -26,19 +26,24 @@
                     <div class="input-field">
                       <input type="text" name="username" style="font-size: 14px;" placeholder="Username" required>
                     </div>
+                  <div class="input-field">
+                      <input type="text" name="username" style="font-size: 14px;" placeholder="Email-Id" required>
+                    </div>
                     <div class="input-field">
                       <input class="pswrd" type="password" name="password" style="font-size: 14px;" placeholder="Password" required>
                       <span class="show">SHOW</span>
                     </div>
+                  <div class="input-field">
+                      <input type="password" name="password" style="font-size: 14px;" placeholder="Confirm Password" required>
+                    </div>
                     <div class="button">
                       <div class="inner"></div>
                       <a href="{% url 'login' %}">
-                        <button type="submit">LOGIN</button>
+                        <button type="submit">REGISTER</button>
                       </a>
                     </div>
                     <div style="display: flex; color: white; font-family: Montserrat; font-size: 8px; gap:50px; cursor: pointer">
-                      <a>FORGOT PASSWORD ?</a>
-                      <a href="{% url 'dealer_registration' %}">DONT HAVE AN ACCOUNT ? CREATE ONE</a>
+                      <a href="{% url 'login_get' %}">ALREADY HAVE AN ACCOUNT ? LOGIN</a>
                     </div>
                     <script>
                       var input = document.querySelector('.pswrd');

@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.contrib.auth import authenticate, login, logout, get_user_model
 from django.contrib.auth.decorators import login_required
 
+
 def login_user(request):
     """
     This method validate the user and login
@@ -28,9 +29,16 @@ def login_user(request):
             return render(request, 'index.html', context)
     else:
         context = {}
-        return render(request, 'login.html', context)
+        return render(request, 'index.html', context)
 
 
+def login_get(request):
+    """
+    This method logout the user
+    :param request: Type of request (GET or POST)
+    :return: Logout page
+    """
+    return render(request, 'login.html')
 
 
 @login_required

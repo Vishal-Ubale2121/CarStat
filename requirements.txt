@@ -1,4 +1,4 @@
-Django
+django
 numpy
 pandas
 bootstrap4
